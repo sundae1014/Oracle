@@ -36,3 +36,70 @@ COL NAME FOR A20
 
 SELECT NAME, 'good mornig~~!' "Good Mornig"
     FROM PROFESSOR;
+
+-- 교재 P33    
+select DNAME, ',it''s deptno: ', DEPTNO "DNAME AND DEPTNO"
+    FROM DEPT;
+
+SELECT DNAME, Q'[, it's deptno : ]', DEPTNO "DNAME AND DEPTNO"
+    FROM DEPT;
+    
+-- 교재 P34
+SELECT PROFNO, NAME, PAY
+    FROM PROFESSOR;
+
+SELECT PROFNO "Prof's NO", NAME AS "Prof's NAME", PAY Prof_Pay
+    FROM PROFESSOR;
+
+-- 교재 P35
+SELECT deptno FROM emp;
+SELECT DISTINCT deptno
+    FROM emp;
+
+-- 교재 p36
+SELECT job, ename
+    FROM emp
+    ORDER BY 1,2;
+
+SELECT DISTINCT job, ename
+    FROM emp
+    ORDER BY 1,2;
+
+-- 교재 p37 ~ 38
+SELECT ename, job FROM emp;
+
+SELECT ename || job FROM emp;
+
+SELECT ename||'-'||job FROM emp;
+
+SELECT ename||' ''s job is '|| job "NAME AND JOB"
+    FROM emp;
+
+-- 연습문제 p39 ~ 40
+SELECT name||' ''s ID: '|| id ||' , WEIGHT is '|| weight ||'kg' "ID AND WEIGHT"
+    FROM student;
+
+SELECT ename||'('||job||')'||', '||ename||''''||job||'''' "NAME AND JOB"
+    FROM emp;
+
+SELECT ename||'''s sal is $'||sal "Name And Sal"
+    FROM emp;
+
+-- 교재 p41 ~ 42
+SELECT empno, ename
+    FROM emp
+    WHERE empno = 7900;
+
+SELECT ename, sal
+    FROM emp
+    WHERE sal < 900;
+
+SELECT empno, ename, sal
+    FROM emp
+    WHERE ename='SMITH';
+
+SELECT empno, ename, sal
+    FROM emp
+    WHERE hiredate = '80/12/17';
+
+-- 교재 p45
