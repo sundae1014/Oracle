@@ -85,7 +85,7 @@ SELECT ename||'('||job||')'||', '||ename||''''||job||'''' "NAME AND JOB"
 SELECT ename||'''s sal is $'||sal "Name And Sal"
     FROM emp;
 
--- 교재 p41 ~ 42
+-- 교재 p41 ~ 43 / WHERE
 SELECT empno, ename
     FROM emp
     WHERE empno = 7900;
@@ -102,4 +102,80 @@ SELECT empno, ename, sal
     FROM emp
     WHERE hiredate = '80/12/17';
 
--- 교재 p45
+-- 교재 P44 / 산술연산자
+SELECT ENAME, SAL
+    FROM EMP
+    WHERE DEPTNO = 10;
+
+SELECT ENAME, SAL, SAL+100
+    FROM EMP
+    WHERE DEPTNO = 10;
+
+SELECT ENAME, SAL, SAL*1.1
+    FROM EMP
+    WHERE DEPTNO = 10;
+
+-- 교재 p45 ~ 56 / 비교 연산자
+SELECT EMPNO, ENAME, SAL
+    FROM EMP
+    WHERE SAL >= 4000;
+    
+SELECT empno, ename, sal
+    FROM emp
+    WHERE ename >= 'W';
+
+SELECT ENAME, HIREDATE
+    FROM EMP;
+
+SELECT ENAME, HIREDATE
+    FROM EMP
+    WHERE HIREDATE >= '81/12/25' ;
+    
+SELECT empno, ename, sal
+    FROM emp
+    WHERE sal BETWEEN 2000 AND 3000;
+
+SELECT empno, ename, sal
+    FROM emp
+    WHERE sal >= 2000
+    AND sal <= 3000;
+
+SELECT ename FROM emp
+    ORDER BY ename;
+
+SELECT ename FROM emp
+    WHERE ename BETWEEN ' JAMES' AND 'MARTIN'
+    ORDER BY ename;
+
+SELECT empno, ename, deptno
+    FROM emp
+    WHERE deptno IN (10,20);
+
+SELECT empno, ename, sal
+    FROM emp
+    WHERE sal LIKE '1%';
+
+SELECT empno, ename, sal
+    FROM emp
+    WHERE ename LIKE 'A%';
+
+SELECT empno, ename, hiredate
+    FROM emp
+    WHERE hiredate LIKE '%17';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
