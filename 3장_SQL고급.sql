@@ -149,24 +149,125 @@ SELECT DISTINCT JOB, DEPNO FROM EMP;
 SELECT EMPNO AS 사번, NAME 이름, GENDER AS "성별" FROM EMP;
 SELECT EMPNO E, NAME N, GENDER G FROM EMP;
 
+-- 실습하기 3-1. 다양한 SQL 숫자 함수 실습
+SELECT SUM(PRICE) AS 합계 FROM SALE;
+SELECT COUNT(*) AS 직원수 FROM EMP;
+SELECT COUNT(EMPNO) AS 직원수 FROM EMP;
+SELECT COUNT(DEPNO) AS 부서수 FROM EMP;
 
+SELECT CEIL(1.2) FROM DUAL;
+SELECT CEIL(1.8) FROM DUAL;
+SELECT FLOOR(1.2) FROM DUAL;
+SELECT FLOOR(1.8) FROM DUAL;
+SELECT ROUND(1.2) FROM DUAL;
+SELECT ROUND(1.8) FROM DUAL;
 
+SELECT DBMS_RANDOM.VALUE FROM DUAL;
+SELECT CEIL(DBMS_RANDOM.VALUE *10) FROM DUAL;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+SELECT AVG(PRICE) AS 평균 FROM SALE;
+SELECT MAX(PRICE) AS "최대값" FROM SALE;
+SELECT MIN(PRICE) AS "최소값" FROM SALE;
     
+// SELECT COUNT(JOB) AS "정직원 수" FROM SALE;
+
+-- 실습하기 3-2. 다양한 SQL 문자 함수 실습
+select 'Hello ORACLE!', LENGTH('Hello Oracle!') FROM DUAL;
+select
+    'HELLO ORACLE!',
+    SUBSTR('HELLO ORACLE', 1, 3),
+    SUBSTR('HELLO ORACLE', 3, 2),
+    SUBSTR('HELLO ORACLE', 5)
+FROM
+    DUAL;
+
+select
+    INSTR('HELLO ORACLE!', 'L') AS INSTR_1, 
+    INSTR('HELLO ORACLE!', 'L', -1) AS INSTR_2
+FROM DUAL;
+
+select '010-1234-5678', REPLACE('010-1234-5678', '-', '') from dual;
+
+select 
+    lpad('Oracle', 10, '#') as lpad, // (대상문자열, 전체길이, 패딩문자)
+    rpad('Oracle', 10, '*') as rpad
+from
+    dual;
+
+select concat(empno, name) from emp where name = '이순신';
+SELECT EMPNO || NAME FROM EMP WHERE NAME = '정약용';
+
+select
+    '[_Oracle_]' AS BEFORE,
+    '[' || TRIM(' _Oracle_ ') || ']' AS TRIMED
+FROM DUAL;
+
+// SYSDATE
+SELECT
+    SYSDATE,
+    SYSDATE -1,
+    SYSDATE +1
+FROM
+    DUAL;
+
+SELECT
+    ADD_MONTHS(SYSDATE, 1),
+    ADD_MONTHS(SYSDATE, -1)
+FROM
+    DUAL;
+
+SELECT
+    MONTHS_BETWEEN(DATE '2025-07-13', DATE '2024-07-13') AS 개월차
+FROM DUAL;
+
+SELECT
+    NEXT_DAY(SYSDATE, '월요일') AS 다음_월요일
+FROM 
+    DUAL;
+
+-- 실습하기 3-4 
+
+SELECT
+    TO_CHAR(SYSDATE, 'YYYY') AS YYYY,
+    TO_CHAR(SYSDATE, 'MM') AS MM,
+    TO_CHAR(SYSDATE, 'DD') AS DD,
+    TO_CHAR(SYSDATE, 'HH24') AS HH24,
+    TO_CHAR(SYSDATE, 'MI') AS NI,
+    TO_CHAR(SYSDATE, 'SS') AS SS,
+    TO_CHAR(SYSDATE, 'YYYY/MM/DD/HH24/MI/SS') AS 날짜시간
+FROM
+    DUAL;
+    
+INSERT INTO EMP 
+    VALUES (1011, '안중근', 'M', '부장', 30, TO_CHAR(SYSDATE, 'YYYY/MM/DD/HH24/MI/SS'));
+
+
+SELECT
+    TO_DATE('20250714', 'YYYY/MM/DD') AS 날짜1,
+    TO_DATE('250714', 'YY-MM-DD') AS 날짜2,
+    TO_DATE(SYSDATE, 'YYYY/MM/DD HH24:MI:SS') AS 날짜3
+FROM
+    DUAL;
+    
+INSERT INTO EMP VALUES(1014, '유관순', 'F', '차장', 20, SYSDATE);
+INSERT INTO EMP VALUES(1015, '윤봉길', 'M', '과장', 30, 
+                        TO_DATE(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'));
+
+SELECT
+    NO,
+    EMPNO,
+    YEAR,
+    MONTH,
+    NVL(PRICE, 0)
+FROM SALE;
+
+SELECT
+    EMPNO,
+    NAME,
+    GENDER,
+    JOB,
+    NVL2(DEPNO, '정규직', '비정규직')
+FROM EMP;
 
 
 
