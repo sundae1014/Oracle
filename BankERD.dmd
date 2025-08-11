@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BankERD" id="434B7F01-03F1-4E2C-9665-68491B6CF3FC" version="3.5">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 02:07:01 UTC</createdTime>
+<ownerDesignName>BankERD</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>434B7F01-03F1-4E2C-9665-68491B6CF3FC</designId>
+</OSDM_Design>
