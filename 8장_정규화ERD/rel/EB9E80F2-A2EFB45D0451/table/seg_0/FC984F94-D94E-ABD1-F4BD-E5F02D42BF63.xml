@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC984F94-D94E-ABD1-F4BD-E5F02D42BF63" name="BO_orders3">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:21:20 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="order_no" id="66FBBB99-9AB7-E989-7E07-5C9912589810">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:21:20 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_id" id="A33D763A-A116-2D2A-2521-08EACA5A8E2D">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:26:14 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="25D58BC7-06FF-400A-04F2-7F40CAD7E083" referredColumn="AF965AE5-F690-0830-AFAC-AACCEC9CDE89"/>
+</associations>
+</Column>
+<Column name="order_date" id="2FF78F1E-BA01-13BE-2045-03A0F310501B">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:21:20 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="123A03CC-6B41-A8D5-D4FE-429E96EB6A8D" name="BO_ordersv1_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:21:20 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66FBBB99-9AB7-E989-7E07-5C9912589810"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A31AA77-4BAB-B148-63EA-A8714C11C202" name="BO_orders3_BO_customer3_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:26:14 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A33D763A-A116-2D2A-2521-08EACA5A8E2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

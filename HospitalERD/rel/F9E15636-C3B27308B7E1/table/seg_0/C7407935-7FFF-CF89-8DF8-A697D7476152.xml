@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C7407935-7FFF-CF89-8DF8-A697D7476152" name="treatment">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:04:49 UTC</createdTime>
+<ownerDesignName>HospitalERD</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="treat_no" id="CB15B2D6-78A7-E80C-8986-5E204CA00A46">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:18:04 UTC</createdTime>
+<ownerDesignName>HospitalERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="doc_id" id="D2DBE991-034A-93BC-A4E3-49CC83ADDDC2">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:25:01 UTC</createdTime>
+<ownerDesignName>HospitalERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E4503F4-5925-509A-6641-7F74EC7720B8" referredColumn="C014012A-49C5-78A4-DC92-ABC28C6CBBBC"/>
+</associations>
+</Column>
+<Column name="pat_id" id="2F0BC206-F767-D7E3-8B76-961EEBAE6732">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:26:14 UTC</createdTime>
+<ownerDesignName>HospitalERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C14A950A-706F-DAAF-CF8B-8AFCD8BCF9F2" referredColumn="151EE9F8-5266-A49B-3162-33B66A422E0C"/>
+</associations>
+</Column>
+<Column name="treat_desc" id="4314E529-4498-F8BA-D8AF-98D3E2C48101">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:18:04 UTC</createdTime>
+<ownerDesignName>HospitalERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="treat_datetime" id="E807E6C4-D5FD-440F-0EF7-3D7148DEFE24">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:18:04 UTC</createdTime>
+<ownerDesignName>HospitalERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B60D700-4A1E-BFA1-B780-9ECCD05AB80B" name="treatment_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:18:04 UTC</createdTime>
+<ownerDesignName>HospitalERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB15B2D6-78A7-E80C-8986-5E204CA00A46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1AEDD5AB-F2DA-855A-3FC5-060D7118FF91" name="treatment_doctor_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:25:01 UTC</createdTime>
+<ownerDesignName>HospitalERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2DBE991-034A-93BC-A4E3-49CC83ADDDC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1980A878-F147-210B-EDDD-69DB1AC5EEE7" name="treatment_patient_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:26:14 UTC</createdTime>
+<ownerDesignName>HospitalERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F0BC206-F767-D7E3-8B76-961EEBAE6732"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

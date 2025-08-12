@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1538F3DC-1F0E-7200-717E-FB2CD8F8177A" name="BO_book">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:45:42 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="book_id" id="F912194D-CDA6-B36E-A00A-7DBA0643A3A5">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:48:41 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="book_name" id="D68C66E1-7394-40A1-B1B4-7A9A71BCA8F0">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:48:41 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="book_price" id="AF5DE0D9-9606-BCD8-8AED-092636F80386">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:06:29 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="615EE280-578B-4649-B413-188E0250D399" name="book_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:48:41 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F912194D-CDA6-B36E-A00A-7DBA0643A3A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

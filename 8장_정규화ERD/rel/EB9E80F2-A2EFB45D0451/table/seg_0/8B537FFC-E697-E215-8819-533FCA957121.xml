@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B537FFC-E697-E215-8819-533FCA957121" name="BO_orders">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:45:43 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="order_no" id="F5FF8B51-A6C4-DC53-29E0-FC3B490E3A17">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:50:01 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_id" id="CE8F88BD-5521-3D01-C2B7-EEEB17E748F0">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:12:37 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A6029BE0-A9E7-BF73-5ECF-718DEAC5E98F" referredColumn="6BBA36D3-D9E7-2863-AD44-7BA97848C105"/>
+</associations>
+</Column>
+<Column name="book_id" id="C880445A-3A94-40E1-07F6-B354C17661D9">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:12:46 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72110872-0795-73B4-82C8-450395893BC7" referredColumn="F912194D-CDA6-B36E-A00A-7DBA0643A3A5"/>
+</associations>
+</Column>
+<Column name="order_date" id="B015776A-332A-A243-F53D-4C01B99376AB">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:50:01 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_count" id="848F80DD-CA30-0052-8546-0C6032DC4743">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:07:43 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37CA9389-45B1-8C8C-29FD-26AFB7F1A561" name="orders_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:50:01 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5FF8B51-A6C4-DC53-29E0-FC3B490E3A17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68EE5D4A-FB0D-09D7-A972-B0D467D22738" name="orders_customer_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:12:37 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE8F88BD-5521-3D01-C2B7-EEEB17E748F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23809E8C-2497-8AB1-43F0-C36038529405" name="orders_book_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:12:46 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C880445A-3A94-40E1-07F6-B354C17661D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

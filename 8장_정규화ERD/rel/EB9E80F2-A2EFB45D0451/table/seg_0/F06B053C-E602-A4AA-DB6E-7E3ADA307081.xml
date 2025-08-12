@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F06B053C-E602-A4AA-DB6E-7E3ADA307081" name="BO_book3">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:21:14 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="book_id" id="563B2AAE-139B-9CF0-8894-F4027A5F8B55">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:21:14 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="book_name" id="6A05DD12-AF34-9D85-3099-4D054D5E1725">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:21:14 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D1191229-DFF7-627B-30DE-4FF2B1CA4D28" name="BO_bookv1_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:21:14 UTC</createdTime>
+<ownerDesignName>8장_정규화ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="563B2AAE-139B-9CF0-8894-F4027A5F8B55"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
