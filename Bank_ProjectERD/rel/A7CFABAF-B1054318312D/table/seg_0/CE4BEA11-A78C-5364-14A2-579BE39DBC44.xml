@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE4BEA11-A78C-5364-14A2-579BE39DBC44" name="Customer">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:04:43 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cust_jumin" id="81DF015A-E188-63B1-A7DE-972C69119D2C">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:38 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>14 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="04D73949-E659-0E52-0A4A-5F17B04BFF1E">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:38 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="C49209B8-D003-B18B-A432-D0FCDA780991">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:38 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="birth" id="CB319390-D0BB-995C-3720-DF888AB48982">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:38 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="8A4288AC-CA31-25EC-D052-DDF052DF0457">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:38 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hp" id="5EEDEF51-A7F6-FE23-C22E-D3052BE2A829">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:38 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="job" id="97666011-994C-1DA2-F736-C7E517765569">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:38 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5CF67050-47B2-680D-D9A6-F9322F94827E" name="Customer_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:38 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81DF015A-E188-63B1-A7DE-972C69119D2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC963E86-9702-F328-10D5-7C5681A55AD3" name="Customer__UN">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:10:29 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A4288AC-CA31-25EC-D052-DDF052DF0457"/>
+<colUsage columnID="5EEDEF51-A7F6-FE23-C22E-D3052BE2A829"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D842C895-024F-7022-1254-DB98B1EF0123" name="Transaction">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:05:18 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="trans_id" id="A9BFA88B-4D09-F314-6C96-3C059A96EE4D">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:16:30 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trans_acc_id" id="1C89B460-DBCE-19C7-7619-8D936F7A6256">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:21:30 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2E4C644-C9FB-4CD1-1F3B-054EF7B49F47" referredColumn="DCF2E212-AA08-5451-4550-CB7C0CD55FFC"/>
+</associations>
+</Column>
+<Column name="trans_type" id="D0B61CC0-B5F4-4FCB-9126-5BEB496F5F4C">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:16:30 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trans_message" id="A6CD2055-016B-9CB5-27BC-6B6AAF292BE0">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:16:30 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trans_money" id="AB881310-84F7-5E3C-9263-EB99BC526D66">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:16:30 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trans_date" id="CEADF672-1C05-A16D-40C9-C6D2D067E270">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:16:30 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3011E20-CF04-E6B3-57FB-43DFE89419E1" name="Transaction_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:16:30 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9BFA88B-4D09-F314-6C96-3C059A96EE4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F860AEC9-63A7-5C3F-3DF3-651EEC372277" name="Transaction_Account_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:21:30 UTC</createdTime>
+<ownerDesignName>Bank_ProjectERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C89B460-DBCE-19C7-7619-8D936F7A6256"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
